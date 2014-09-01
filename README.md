@@ -1,9 +1,9 @@
 vagrant-verskis
 ===============
 
-CentOS 6.5
-PHP 5.4
-Apache
+* entOS 6.5
+* PHP 5.4
+* Apache
 
 Usage
 ===
