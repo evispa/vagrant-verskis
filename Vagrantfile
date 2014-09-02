@@ -57,6 +57,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # information on available options.
 
   config.vm.provision :shell, path: "./bootstrap/bootstrap.sh"
+	
+  # install/autoupdate vbguest plugin
+  config.vbguest.auto_update = true
 
   # Enable provisioning with Puppet stand alone.  Puppet manifests
   # are contained in a directory path relative to this Vagrantfile.
