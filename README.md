@@ -15,6 +15,10 @@
  
  ```sudo echo "127.0.0.1 www.verskis" > /etc/hosts```
 
+ * Start vagrant box
+
+ ```vagrant up```
+
  * Open project in browser on port 8080:
  
  http://www.verskis:8080
