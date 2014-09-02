@@ -16,6 +16,9 @@ sudo yum install httpd -y;
 # php
 sudo yum install php -y;
 
+# nginx
+sudo yum install nginx -y;
+
 # php.ini
 sudo rm /etc/php.ini;
 sudo cp /bootstrap/etc/php.ini /etc/php.ini;
@@ -23,6 +26,10 @@ sudo cp /bootstrap/etc/php.ini /etc/php.ini;
 # httpd.conf
 sudo rm /etc/httpd/conf/httpd.conf;
 sudo cp /bootstrap/etc/httpd/conf/httpd.conf /etc/httpd/conf/httpd.conf;
+
+# nginx
+sudo rm /etc/nginx/conf.d/default.conf;
+sudo cp /bootstrap/etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf;
 
 # php extensions
 sudo yum install php-apc -y;
@@ -36,5 +43,9 @@ sudo yum install php-mbstring -y;
 # httpd start
 sudo service httpd start;
 
+# nginx start
+sudo service nginx start;
+
 # autostart 
 sudo chkconfig httpd on;
+sudo chkconfig nginx on;

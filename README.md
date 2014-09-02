@@ -1,9 +1,8 @@
 #vagrant-verskis
 
-
 * CentOS 6.5
 * PHP 5.4
-* Apache
+* Apache 2.2
 
 ###Usage
 
@@ -11,10 +10,25 @@
 
  ```ln -s /home/user/www/verskis ./www```
 
- * Add 127.0.0.1 www.verskis to hosts:
+ * Add 10.10.10.10 www.verskis to hosts:
  
- ```sudo echo "127.0.0.1 www.verskis" > /etc/hosts```
+ ```sudo echo "10.10.10.10 www.verskis" > /etc/hosts```
 
- * Open project in browser on port 8080:
+ * Up enviroment
+
+ ```vagrant up```
+
+ * Open project in browser:
  
- http://www.verskis:8080
+ http://www.verskis
+
+### Requirements
+
+ * Host unix-like OS (strongly recommended)
+ * Host NFS (```sudo apt-get install -y nfs-kernel-server```)
+ * Vagrant >=1.6.0
+ * VirtualBox >=4.3.0
+
+### Known issues
+
+ Due to NFS project filesystem IO is 10%~70% slower (however default VirtualBox shared folders is ~2300% slower).
