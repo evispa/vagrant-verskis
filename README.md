@@ -12,7 +12,7 @@
 
  * Add 10.10.10.10 www.verskis to hosts:
  
- ```sudo echo "10.10.10.10 www.verskis" > /etc/hosts```
+ ```sudo echo "10.10.10.10 www.verskis" >> /etc/hosts```
 
  * Up enviroment
 
