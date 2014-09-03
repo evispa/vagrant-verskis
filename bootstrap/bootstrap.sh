@@ -40,6 +40,9 @@ sudo yum install php-pdo -y;
 sudo yum install php-mysql -y;
 sudo yum install php-mbstring -y;
 
+# mysql
+sudo yum install mysql-client -y;
+
 # httpd start
 sudo service httpd start;
 
