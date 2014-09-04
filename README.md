@@ -10,10 +10,6 @@
 
  ```ln -s /home/user/www/verskis ./www```
 
- * Add 10.10.10.10 www.verskis to hosts:
- 
- ```sudo echo "10.10.10.10 www.verskis" >> /etc/hosts```
-
  * Up enviroment
 
  ```vagrant up```
@@ -27,6 +23,7 @@
  * Host unix-like OS (strongly recommended)
  * Host NFS (```sudo apt-get install -y nfs-kernel-server```)
  * Vagrant >=1.6.0
+ * Vagrant hostsupdater plugin (```vagrant plugin install vagrant-hostsupdater```)
  * VirtualBox >=4.3.0
 
 ### Known issues
