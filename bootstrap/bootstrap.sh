@@ -43,6 +43,12 @@ sudo yum install php-mbstring -y;
 # mysql
 sudo yum install mysql-client -y;
 
+# ruby, compass
+sudo yum install ruby -y;
+sudo yum install rubygems -y;
+sudo yum install ruby-devel -y;
+sudo gem install compass;
+
 # httpd start
 sudo service httpd start;
 
