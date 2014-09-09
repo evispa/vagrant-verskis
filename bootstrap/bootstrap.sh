@@ -49,6 +49,13 @@ sudo yum install rubygems -y;
 sudo yum install ruby-devel -y;
 sudo gem install compass;
 
+# bindfs
+sudo yum install fuse-devel -y;
+sudo rpm -i http://digiactive.com.au/digiactive-repo/centos/6/x86_64/bindfs-1.12.3-1.el6.x86_64.rpm;
+
+# fix synced nfs user
+sudo bindfs --force-user=vagrant /var/www/verskis /var/www/verskis; 
+
 # httpd start
 sudo service httpd start;
 
