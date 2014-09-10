@@ -57,8 +57,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   # View the documentation for the provider you're using for more
   # information on available options.
-
-  config.vm.provision :shell, path: "./bootstrap/bootstrap.sh"
+  
+  config.vm.provision :shell, path: "./bootstrap/bootstrap.sh", preserve_order: true
+  
+  # fix synced nfs user on every boot
+  config.vm.provision :shell, inline: "sudo bindfs --force-user=vagrant /var/www/verskis /var/www/verskis;", run: "always", preserve_order: true
 	
   # install/autoupdate vbguest plugin
   config.vbguest.auto_update = true
