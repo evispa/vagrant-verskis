@@ -53,6 +53,12 @@ sudo gem install compass;
 sudo yum install fuse-devel -y;
 sudo rpm -i http://digiactive.com.au/digiactive-repo/centos/6/x86_64/bindfs-1.12.3-1.el6.x86_64.rpm;
 
+# mysql
+sudo yum install git -y;
+
+# mysql
+sudo yum install mercurial -y;
+
 # httpd start
 sudo service httpd start;
 
