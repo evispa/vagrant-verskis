@@ -62,6 +62,14 @@ sudo yum install mercurial -y;
 # httpd start
 sudo service httpd start;
 
+# python + modules
+sudo yum install python -y;
+sudo yum install python-argparse -y
+sudo yum install python-httplib2 -y;
+sudo yum install python-pexpect -y;
+sudo yum install pexpect.noarch -y;
+sudo yum install python-paramiko -y
+
 # nginx start
 sudo service nginx start;
 
