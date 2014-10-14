@@ -25,6 +25,7 @@
  * Host NFS (```sudo apt-get install -y nfs-kernel-server```)
  * Vagrant >=1.6.0
  * Vagrant hostsupdater plugin (```vagrant plugin install vagrant-hostsupdater```)
+ * Vagrant vbguest plugin (```vagrant plugin install vagrant-vbguest```)
  * VirtualBox >=4.3.0
 
 ### Known issues
