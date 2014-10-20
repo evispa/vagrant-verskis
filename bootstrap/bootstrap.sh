@@ -47,7 +47,10 @@ sudo yum install mysql-client -y;
 sudo yum install ruby -y;
 sudo yum install rubygems -y;
 sudo yum install ruby-devel -y;
-sudo gem install compass;
+
+# old versions for foundation support...
+sudo gem install sass -v "=3.2.9"
+sudo gem install compass -v "=0.12.7";
 
 # bindfs
 sudo yum install fuse-devel -y;
