@@ -49,7 +49,7 @@ sudo yum install rubygems -y;
 sudo yum install ruby-devel -y;
 
 # old versions for foundation support...
-sudo gem install sass -v "=3.2.9"
+sudo gem install sass -v "=3.2.9";
 sudo gem install compass -v "=0.12.7";
 
 # bindfs
@@ -67,11 +67,14 @@ sudo service httpd start;
 
 # python + modules
 sudo yum install python -y;
-sudo yum install python-argparse -y
+sudo yum install python-argparse -y;
 sudo yum install python-httplib2 -y;
 sudo yum install python-pexpect -y;
 sudo yum install pexpect.noarch -y;
 sudo yum install python-paramiko -y
+
+# phpunit
+sudo yum install phpunit -y;
 
 # nginx start
 sudo service nginx start;
