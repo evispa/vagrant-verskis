@@ -16,6 +16,9 @@ sudo yum install httpd -y;
 # php
 sudo yum install php -y;
 
+# phpunit
+sudo yum install phpunit -y;
+
 # nginx
 sudo yum install nginx -y;
 
@@ -72,9 +75,6 @@ sudo yum install python-httplib2 -y;
 sudo yum install python-pexpect -y;
 sudo yum install pexpect.noarch -y;
 sudo yum install python-paramiko -y
-
-# phpunit
-sudo yum install phpunit -y;
 
 # nginx start
 sudo service nginx start;
