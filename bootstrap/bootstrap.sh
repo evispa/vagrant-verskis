@@ -1,3 +1,8 @@
+# install new kernel-devel
+sudo wget ftp://mirror.switch.ch/pool/4/mirror/scientificlinux/6.4/x86_64/updates/security/kernel-devel-2.6.32-431.el6.x86_64.rpm;
+rpm -Uvh kernel-devel-2.6.32-431.el6.x86_64.rpm;
+rm kernel-devel-2.6.32-431.el6.x86_64.rpm;
+
 # epel, remi
 sudo wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 sudo wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm;
