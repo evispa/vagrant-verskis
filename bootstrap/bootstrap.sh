@@ -4,7 +4,7 @@ sudo rpm -Uvh kernel-devel-2.6.32-431.el6.x86_64.rpm;
 sudo rm kernel-devel-2.6.32-431.el6.x86_64.rpm;
 
 # epel, remi
-sudo wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+sudo wget http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm;
 sudo wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm;
 sudo rpm -ivh epel-release-6-8.noarch.rpm remi-release-6.rpm;
 sudo rm epel-release-6-8.noarch.rpm remi-release-6.rpm;
