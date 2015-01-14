@@ -76,15 +76,6 @@ sudo yum install ant -y;
 # phpunit
 sudo yum install phpunit -y;
 
-# python libs
-sudo yum install python-argparse -y;
-sudo yum install python-httplib2 -y;
-sudo yum install pexpect.noarch -y;
-sudo yum install paramiko -y;
-
-# httpd start
-sudo service httpd start;
-
 # python + modules
 sudo yum install python -y;
 sudo yum install python-argparse -y;
@@ -92,6 +83,9 @@ sudo yum install python-httplib2 -y;
 sudo yum install python-pexpect -y;
 sudo yum install pexpect.noarch -y;
 sudo yum install python-paramiko -y
+
+# httpd start
+sudo service httpd start;
 
 # nginx start
 sudo service nginx start;
