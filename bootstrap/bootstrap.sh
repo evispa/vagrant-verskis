@@ -70,6 +70,12 @@ sudo yum install git -y;
 # mysql
 sudo yum install mercurial -y;
 
+# ant
+sudo yum install ant -y;
+
+# phpunit
+sudo yum install phpunit -y;
+
 # httpd start
 sudo service httpd start;
 
